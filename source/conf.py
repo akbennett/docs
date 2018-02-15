@@ -165,7 +165,7 @@ html_theme = 'sphinx_rtd_theme'
 if html_theme == 'sphinx_rtd_theme':
     html_context = {
         'css_files': [
-            '/_static/theme_overrides.css',
+            './_static/theme_overrides.css',
         ],
     }
 # Theme options are theme-specific and customize the look and feel of a theme
