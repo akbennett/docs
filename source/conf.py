@@ -162,12 +162,12 @@ html_theme = 'sphinx_rtd_theme'
 
 # RTD theme has a bug:
 # https://rackerlabs.github.io/docs-rackspace/tools/rtd-tables.html
-if html_theme == 'sphinx_rtd_theme':
-    html_context = {
-        'css_files': [
-            './_static/theme_overrides.css',
-        ],
-    }
+#if html_theme == 'sphinx_rtd_theme':
+#    html_context = {
+#        'css_files': [
+#            './_static/theme_overrides.css',
+#        ],
+#    }
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
@@ -262,3 +262,6 @@ htmlhelp_basename = 'osfdoc'
 
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {'https://docs.python.org/': None}
+
+def setup(app):
+    app.add_stylesheet('theme_overrides.css')
